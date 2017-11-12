@@ -1,0 +1,18 @@
+version: '2'
+services:
+  database:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+      MYSQL_USER: phpipam
+      MYSQL_PASSWORD: phpipam
+      MYSQL_DATABASE: phpipam
+    volumes:
+      - ".data:/var/lib/mysql"
+  phpipam:
+    build: .
+    ports:
+      - "8081:80"
+    depends_on:
+      - database

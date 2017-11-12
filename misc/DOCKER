@@ -1,0 +1,10 @@
+To run phpipam in Docker for development purposes:
+
+1. Install Docker & Docker Compose
+2. `docker-compose up`
+3. Go to http://localhost:8081/
+4. Choose "New Installation"
+5. Choose "Automatic"
+6. Enter "phpipam" as both the MySQL username and password
+7. Press the "Advanced Options" button and deselect all the checkboxes
+8. Proceed through the rest of the installation process

@@ -39,6 +39,10 @@ Reset admin password
 ====================
 php functions/scripts/reset-admin-password.php
 
+Docker
+======
+See misc/DOCKER
+
 Changelog
 =========
 See misc/CHANGELOG
